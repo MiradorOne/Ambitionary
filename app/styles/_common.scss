@@ -1,0 +1,48 @@
+.headings-padding {
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+
+.section-color-black {
+  color:#1c1c1c;
+}
+
+.black-bg {
+  background-color: #0a0000;
+}
+
+.black-border-top {
+  border-top:2px solid #000;
+  margin-top:10px;
+}
+
+.btn-bordered-white {
+  @include button-variant(#fff,rgba(0,0,0,0),#fff);
+}
+
+.author {
+  color:#0a0000;
+  font-weight:700;
+}
+
+.image-logo-black, .image-logo-white {
+  width:53px;
+  height:50px;
+  position: absolute;
+  right:85px;
+  bottom:50px;
+}
+
+.image-logo-white {
+  background: url('../images/image-logo-white.png') no-repeat;
+}
+
+.image-logo-black {
+  background: url('../images/image-logo-black.png') no-repeat;
+}
+
+
+.popup {
+  background-color: #1c1c1c;
+  width: 65%;
+}

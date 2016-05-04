@@ -1,8 +1,14 @@
 header {
-  background-image: url('../images/header-bg.jpg');
-  .logo {
-    background: url('../images/text-logo.png') no-repeat;
-    max-width:460px;
-    height: 43px;
+  position: relative;
+  background: url('../images/header-bg.jpg') no-repeat center;
+  background-size: cover;
+  .headings-color-gray {
+    color:#D4D4D4;
   }
+
+  p {
+    font-size:$font-size-h2;
+    color:#fff;
+  }
+
 }
