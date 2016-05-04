@@ -9,6 +9,7 @@ $icon-font-path: '../fonts/';
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/blob/master/LICENSE)
  */
+@import "fonts";
 @import "variables";
 // Core variables and mixins
 //@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
@@ -64,7 +65,6 @@ $icon-font-path: '../fonts/';
 
 //Custom
 @import "mixins";
-@import "fonts";
 @import "common";
 @import "header";
 @import "content";
