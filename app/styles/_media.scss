@@ -14,5 +14,27 @@
     p {
       margin-bottom:30px;
     }
+    .popup {
+    width:90%;
+    }
+  }
+  main {
+    .gray-line-top {
+      &::after {
+        top:67px;
+      }
+      &::before {
+        top:70px;
+      }
+    }
+  }
+  footer {
+    section {
+      .email-form {
+        input {
+          width:80%;
+        }
+      }
+    }
   }
 }

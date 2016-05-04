@@ -7,6 +7,10 @@
   color:#1c1c1c;
 }
 
+.section-bg-white {
+  background-color: #fff;
+}
+
 .black-bg {
   background-color: #0a0000;
 }
@@ -18,11 +22,39 @@
 
 .btn-bordered-white {
   @include button-variant(#fff,rgba(0,0,0,0),#fff);
+  padding: 10px 40px;
+}
+
+.gray-line-top {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top:170px;
+    left:0;
+    width:50%;
+    height:2px;
+    background-color: #d7d7d7;
+
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width:8px;
+    height:8px;
+    right:50%;
+    top:167px;
+    background: url('../images/gray-line-top-eclipse.png') no-repeat;
+  }
 }
 
 .author {
   color:#0a0000;
   font-weight:700;
+}
+
+.link-black {
+  @include link-variant(#1c1c1c);
 }
 
 .image-logo-black, .image-logo-white {
@@ -41,8 +73,14 @@
   background: url('../images/image-logo-black.png') no-repeat;
 }
 
-
 .popup {
   background-color: #1c1c1c;
-  width: 65%;
+  width: 55%;
+  padding: 30px 30px 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  & .glyphicon {
+    font-size: 11px;
+    top:-1px;
+  }
 }
