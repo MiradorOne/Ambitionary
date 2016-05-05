@@ -22,7 +22,7 @@
 
 .btn-bordered-white {
   @include button-variant(#fff,rgba(0,0,0,0),#fff);
-  padding: 10px 40px;
+  padding: 10px 60px;
 }
 
 .gray-line-top {
@@ -87,8 +87,12 @@
   padding: 30px 30px 20px;
   margin-top: 15px;
   margin-bottom: 20px;
-  & .glyphicon {
+  .glyphicon {
     font-size: 11px;
     top:-1px;
+  }
+  a {
+    text-transform: uppercase;
+    margin-top: 20px;
   }
 }
