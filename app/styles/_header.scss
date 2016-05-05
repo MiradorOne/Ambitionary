@@ -1,12 +1,23 @@
 header {
   position: fixed;
-  //z-index: -5;
   background: url('../images/header-bg.jpg') no-repeat center;
   background-size: cover;
   width:100vw;
   height:100vh;
+  min-height:680px;
+
+  .navbar-right {
+    padding-top: 20px;
+  }
+
   .headings-color-gray {
     color:#D4D4D4;
+  }
+
+  .container {
+    position: relative;
+    top:40%;
+    transform: translateY(-40%);
   }
 
   p {
