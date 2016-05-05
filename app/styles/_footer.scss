@@ -60,4 +60,13 @@ footer {
       margin:10px;
     }
    }
+  @media (max-width:$screen-sm - 1) {
+    section {
+      .email-form {
+        input {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
