@@ -25,33 +25,35 @@
     <!--[if lt IE 10]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" id="sticky-nav" role="navigation">
+      <div class="container-fluid">
+        <!-- Бренд та перемикач згруповані для кращого відображення на мобільних пристроях -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./images/image-logo-white.png" alt="Ambitionary">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right text-uppercase">
+            <li><a href="#">Home <span class="sr-only">(поточний)</span></a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">About you</a></li>
+            <li><a href="#">Connect</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav >
     <header>
       <div class="image-logo-white">
       </div>
        <h1 class="hidden">Ambitionary</h1>
-       <nav class="navbar navbar-default" role="navigation">
-         <div class="container-fluid">
-           <!-- Бренд та перемикач згруповані для кращого відображення на мобільних пристроях -->
-           <div class="navbar-header">
-             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-               <span class="sr-only">Toggle navigation</span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-             </button>
-             <!--<a class="navbar-brand" href="#">Бренд</a>-->
-           </div>
-
-           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-             <ul class="nav navbar-nav navbar-right text-uppercase">
-               <li><a href="#">Home <span class="sr-only">(поточний)</span></a></li>
-               <li><a href="#">About us</a></li>
-               <li><a href="#">About you</a></li>
-               <li><a href="#">Connect</a></li>
-             </ul>
-           </div><!-- /.navbar-collapse -->
-         </div><!-- /.container-fluid -->
-       </nav>
        <div class="container">
          <div class="row text-center">
            <div class="col-xs-12">
@@ -67,8 +69,8 @@
        </div>
      </header>
     <main>
-      <section class="section-bg-white section-color-black section-padding-sm section-padding-lg gray-line-top">
-        <div class="container ">
+      <section class="section-bg-white section-color-black section-padding-sm section-padding-lg  section-content-center">
+        <div class="container gray-line-top">
           <div class="row">
             <div class="col-sm-1 hidden-xs black-border-top" ></div>
             <div class="col-xs-12 col-sm-5">
@@ -90,11 +92,11 @@
         <div class="image-logo-black">
         </div>
       </section>
-      <section class="section-padding-sm section-padding-lg black-bg ">
+      <section class="section-padding-sm section-padding-lg black-bg section-content-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center">
-              <h2>Are you a <span>VISIONARY</span>, a <span>CONTRIBUTOR</span>, or <span>BOTH</span>?</h2>
+              <h2 class="text-uppercase">Are you a <span id="visionary">VISIONARY</span>, a <span id="contributor">CONTRIBUTOR</span>, or <span id="both">BOTH</span>?</h2>
             </div>
           </div>
           <div class="row">
@@ -110,7 +112,7 @@
       </section>
     </main>
     <footer>
-      <section class="section-bg-white section-color-black section-padding-sm section-padding-lg">
+      <section class="section-bg-white section-color-black section-padding-sm section-padding-lg section-content-center">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 text-center text-uppercase">
@@ -118,7 +120,7 @@
             </div>
             <div class="col-xs-12">
               <div class="email-form text-center">
-                <input type="text" class="text-uppercase" value="your email address">
+                <input type="text" class="text-uppercase" placeholder="your email address">
                 <a href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
               </div>
             </div>
@@ -196,7 +198,7 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
-
+    <script src="/bower_components/sticky-kit/jquery.sticky-kit.js"></script>
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

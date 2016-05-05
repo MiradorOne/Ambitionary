@@ -19,14 +19,6 @@
     }
   }
   main {
-    .gray-line-top {
-      &::after {
-        top:67px;
-      }
-      &::before {
-        top:70px;
-      }
-    }
   }
   footer {
     section {
@@ -34,6 +26,20 @@
         input {
           width:80%;
         }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-height:450px) {
+  header {
+    .container {
+    top:20% !important;
+    transform:translateY(-20%) !important;
+      h2, p {
+        padding-top:0;
+        padding-bottom:0;
       }
     }
   }

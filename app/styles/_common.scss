@@ -30,7 +30,7 @@
   &::before {
     content: '';
     position: absolute;
-    top:170px;
+    top:-13px;
     left:0;
     width:50%;
     height:2px;
@@ -43,7 +43,7 @@
     width:8px;
     height:8px;
     right:50%;
-    top:167px;
+    top:-16px;
     background: url('../images/gray-line-top-eclipse.png') no-repeat;
   }
 }
@@ -55,6 +55,14 @@
 
 .link-black {
   @include link-variant(#1c1c1c);
+}
+
+.section-content-center {
+  .container {
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+  }
 }
 
 .image-logo-black, .image-logo-white {

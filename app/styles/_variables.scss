@@ -363,7 +363,7 @@ $container-lg:                 $container-large-desktop !default;
 
 // Basics of a navbar
 $navbar-height:                    120px !default;
-$navbar-margin-bottom:             5px !default;
+$navbar-margin-bottom:             0 !default;
 $navbar-border-radius:             $border-radius-base !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
@@ -375,7 +375,7 @@ $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
 $navbar-default-link-color:                #fff !default;
-$navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-hover-color:          darken(#fff,25%) !default;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         #555 !default;
 $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
